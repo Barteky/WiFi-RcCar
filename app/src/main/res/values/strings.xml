@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rc Car</string>
+    <string name="automatic_mode">AUTOMATIC MODE</string>
+    <string name="manual_mode">MANUAL MODE</string>
+    <string name="front_lights">FRONT LIGHTS</string>
+    <string name="distance">DISTANCE: 25 cm</string>
+    <string name="speed">SPEED: 5</string>
+    <string name="lights_back">BACK LIGHTS</string>
+    <string name="remember_to_connect_to_rccar_wifi_and_turn_off_mobile_data">Remember to connect to RcCar WiFi and turn off mobile data</string>
+</resources>

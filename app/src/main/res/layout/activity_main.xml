@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6b816e"
+    tools:context=".MainActivity">
+
+
+
+    <WebView
+        android:id="@+id/webViewer"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu" />
+
+    <Switch
+        android:id="@+id/tryb"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/text_predkosc"
+        app:layout_constraintStart_toStartOf="@+id/text_predkosc"
+        app:layout_constraintTop_toBottomOf="@+id/tyl" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/automatic_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/tryb"
+        app:layout_constraintEnd_toStartOf="@+id/tryb"
+        app:layout_constraintTop_toTopOf="@+id/tryb" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/manual_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/tryb"
+        app:layout_constraintStart_toEndOf="@+id/tryb"
+        app:layout_constraintTop_toTopOf="@+id/tryb" />
+
+    <Switch
+        android:id="@+id/swiatla_przod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/front_lights"
+        app:layout_constraintBottom_toTopOf="@+id/swiatla_przod"
+        app:layout_constraintEnd_toEndOf="@+id/lewo"
+        app:layout_constraintStart_toStartOf="@+id/lewo"
+        app:layout_constraintTop_toBottomOf="@+id/lewo" />
+
+    <Switch
+        android:id="@+id/swiatla_tyl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/przod"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/przod"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <Button
+        android:id="@+id/tyl"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/tyl"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tryb"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przod" />
+
+    <Button
+        android:id="@+id/lewo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lewo"
+        app:layout_constraintBottom_toTopOf="@+id/tyl"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tyl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przod" />
+
+    <Button
+        android:id="@+id/prawo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/prawo"
+        app:layout_constraintBottom_toBottomOf="@+id/tyl"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tyl"
+        app:layout_constraintTop_toTopOf="@+id/przod" />
+
+    <SeekBar
+        android:id="@+id/czulosc"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:max="10"
+        android:progress="5"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/text_czulosc" />
+
+    <TextView
+        android:id="@+id/text_czulosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/distance"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/czulosc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <SeekBar
+        android:id="@+id/predkosc"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintTop_toBottomOf="@+id/text_predkosc"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text_predkosc"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/predkosc"
+        app:layout_constraintTop_toBottomOf="@+id/tryb" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/lights_back"
+        app:layout_constraintBottom_toTopOf="@+id/swiatla_tyl"
+        app:layout_constraintEnd_toEndOf="@+id/prawo"
+        app:layout_constraintStart_toStartOf="@+id/prawo"
+        app:layout_constraintTop_toBottomOf="@+id/prawo" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        app:layout_constraintBottom_toBottomOf="@+id/webViewer"
+        app:layout_constraintEnd_toStartOf="@+id/webViewer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/webViewer" />
+
+
+</android.support.constraint.ConstraintLayout>
